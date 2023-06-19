@@ -7,11 +7,62 @@ export interface Props {
 const { name, href } = Astro.props;
 ---
 
-<nav>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/services">Services</a>
-  <a href="/portfolio">Portfolio</a>
-  <a href="/blog">Blog</a>
+<nav class="navbar">
+    <a class="navlogo" href="/">Jamstack Ninjas</a>
+    <div class="linkdiv">
+      <a class="navlink" href="/">Home</a>
+      <a class="navlink" href="/about">About</a>
+      <a class="navlink" href="/services">Services</a>
+      <a class="navlink" href="/portfolio">Portfolio</a>
+      <a class="navlink" href="/blog">Blog</a>
+      <a class="contact">Contact Us</a>
+    </div>
 </nav>
+<style>
+  .navbar {
+    display: flex;
+    background-color: navy;
+    color: white;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .linkdiv {
+    padding: 1rem;
+    flex-direction: flex-end;
+  }
+  .navlogo {
+    font-size: 1.5rem;
+    color: magenta;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: bold;
+  }
+  .navlink {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 1rem;
+    font-weight: bold;
+  }
+  .navlink:hover {
+    color: magenta;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+  }
+  .contact {
+    background-color: magenta;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  .contact:hover {
+    background-color: white;
+    color: magenta;
+    border: 3px solid magenta;
+  }
+</style>
+
 
