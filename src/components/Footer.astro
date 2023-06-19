@@ -1,0 +1,53 @@
+---
+export interface Props {
+  name: string;
+  href: string;
+}
+
+const { name, href } = Astro.props;
+---
+
+<footer class="footgrid">
+  <div class="listone">
+    <p>Links</p>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/">Blog</a></li>
+    </ul>
+  </div>
+  <div class="listtwo">
+    <p>Blog Posts</p>
+    <ul>
+      <li><a href="/post/postOne">Post One</a></li>
+      <li><a href="/post/postOne">Post One</a></li>
+      <li><a href="/post/postOne">Post One</a></li>
+    </ul>
+  </div>
+  <div class="contactinfo">
+    <p>Contact Info</p>
+    <ul>
+      <li>Phone Number</li>
+      <li>Email</li>
+      <li>Address</li>
+    </ul>
+  </div>
+</footer>
+<style>
+  footer {
+    background-color: navy;
+    color: white;
+  }
+  .footgrid {
+    display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+  }
+  li {
+    color: white;
+  }
+  a {
+    color: white;
+  }
+</style>
