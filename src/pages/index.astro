@@ -9,6 +9,24 @@ import Card from '../components/Card.astro';
 		<p class="instructions">
 			We are the number one choice for all of your Jamstack website, web app, and consultation needs! Speak to us today to get started!
 		</p>
+		<h3 class="feat-head">Featured Services</h3>
+		<div class="featured">
+			<div class="featured-card">
+				<h4>Marketing Services</h4>
+				<p>We'll market the shit outta your business!</p>
+				<a class="market-button" href="/services/jamstack">Marketing</a>
+			</div>
+			<div class="featured-card">
+				<h4>Jamstack Development</h4>
+				<p>We make sick Jamstack apps for your business!</p>
+				<a class="jam-button" href="/services/jamstack">Jamstack</a>
+			</div>
+			<div class="featured-card">
+				<h4>Graphic Design</h4>
+				<p>We design shit that'll blow your mind.</p>
+				<a class="design-button" href="/services/design">Design</a>
+			</div>
+		</div>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
@@ -73,6 +91,45 @@ import Card from '../components/Card.astro';
 	}
 	.instructions strong {
 		color: rgb(var(--accent));
+	}
+	.featured {
+		display: flex;
+		width: 80ch;
+	}
+	.feat-head {
+		text-align: center;
+	}
+	.featured-card {
+		width: 20ch;
+		border: 1px solid black;
+		border-radius: 20px;
+		padding: 20px;
+		margin: 20px;
+		text-align: center;
+	}
+	.market-button {
+		text-decoration: none;
+		background-color: magenta;
+		color: white;
+		padding: 8px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+	.jam-button {
+		text-decoration: none;
+		background-color: green;
+		color: white;
+		padding: 8px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+	.design-button {
+		text-decoration: none;
+		background-color: orange;
+		color: white;
+		padding: 8px;
+		border: 1px solid black;
+		border-radius: 10px;
 	}
 	.link-card-grid {
 		display: grid;
