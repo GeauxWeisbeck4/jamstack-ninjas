@@ -5,9 +5,9 @@ The Web Dev Agency that makes unique, engaging, and money-making Jamstack web ex
 ## To Do 
 
 - [ ] Create main components
-- [ ] Create Home page
-- [ ] Make other pages 
-- [ ] Link all pages through Navbar component
+- [x] Create Home page
+- [x] Make other pages 
+- [x] Link all pages through Navbar component
 - [ ] Hook up CMS 
 
 ## Notes
